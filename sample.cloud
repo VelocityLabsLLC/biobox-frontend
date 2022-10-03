@@ -1,0 +1,4 @@
+REACT_APP_ENV=CLOUD
+REACT_APP_API_URL=http://biobox-backend-lb-2080851250.us-east-1.elb.amazonaws.com
+REACT_APP_SOCKET_URL=http://biobox-cloud-socket-lb-222964912.us-east-1.elb.amazonaws.com
+REACT_APP_STRIPE_PUBLISH_KEY=pk_test_51IZC4SK1A94fZ2qdWzwFsAyH3ICcjzIHrkiZmlwyuCJnBRDZQK8g35QwESg3KY1Cg72qckybwtL4U8qighxHbv9C00S0zE7Rsn

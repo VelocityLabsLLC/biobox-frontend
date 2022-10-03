@@ -1,0 +1,10 @@
+.f1 {
+  flex: 1;
+  text-align: center;
+}
+
+.SLAVE {
+  .f1 {
+    font-weight: bolder;
+  }
+}

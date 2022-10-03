@@ -1,0 +1,192 @@
+// Here you can add other styles
+
+// styling for biobox screen
+@media screen and (max-width: 1024px) {
+  .c-wrapper:not(.c-wrapper-fluid) .c-header-fixed {
+    position: relative;
+  }
+  .c-main {
+    padding-top: 1rem;
+    .container-fluid {
+      padding-left: 10px;
+      padding-right: 10px;
+      .card-body {
+        padding: 1rem;
+      }
+    }
+  }
+  .table th,
+  td {
+    padding: 0.5rem;
+  }
+}
+
+.card-box {
+  height: 150px;
+  width: 150px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
+.loader {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 1;
+  svg.lds-eclipse {
+    margin: auto;
+  }
+}
+
+.ib {
+  display: inline-block;
+}
+
+.roundBtn {
+  border-radius: 100%;
+  padding: 5px 10px;
+}
+
+.addBtn {
+  margin-right: 10px;
+}
+
+.remove-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.rounded-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.current-assigned {
+  background-color: #39f !important;
+}
+.rounded-icon.active {
+  background-color: #39f !important;
+  background: radial-gradient(#fff7 50%, transparent 50%);
+}
+.rounded-icon.inactive {
+  border: 2px solid #39f !important;
+}
+
+.connected-dot,
+.disconnected-dot,
+.idle-dot {
+  text-transform: capitalize;
+  font-size: 14px;
+  content: '';
+  display: inline-block;
+  margin-right: 5px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  color: #1c1b21;
+}
+.connected-dot {
+  background-color: #2da050;
+}
+.disconnected-dot {
+  background-color: #e34b4b;
+}
+.idle-dot {
+  background-color: #f0e10f;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.graphtable {
+  height: 300px !important;
+  overflow-y: scroll !important;
+}
+
+// ! Chart
+.chartWrapper {
+  // position: relative !important;
+  // overflow-x: auto !important; // ! for horizontal scrollable
+  // max-width: 800px;
+  height: 350px;
+}
+
+.chartAreaWrapper canvas {
+  pointer-events: none !important;
+  width: 100% !important;
+}
+
+.chartAreaWrapper {
+  // overflow: visible !important; // ! for horizontal scrollable
+  // padding: 20px;
+  height: 150px !important;
+}
+
+.experiment-name {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 2s infinite;
+}
+
+.busy {
+  color: #e34b4b;
+}
+.slave-dashboard {
+  font-size: x-large;
+}
+
+.pagination {
+  justify-content: flex-end !important;
+  .active {
+    .page-link {
+      background-color: #39f;
+      border-color: #39f;
+    }
+  }
+}
+
+div[contenteditable='true'] {
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-clip: padding-box;
+  border: 1px solid;
+  color: #768192;
+  background-color: #fff;
+  border-color: #d8dbe0;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &:focus {
+    color: #768192;
+    background-color: #fff;
+    border-color: #958bef;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #321fdb40;
+  }
+}

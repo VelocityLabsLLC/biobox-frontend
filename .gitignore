@@ -1,0 +1,5 @@
+node_modules
+CHANGELOG.md
+build/
+.env.*
+*.log
